@@ -1,0 +1,113 @@
+#main {}
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+#nav {
+    display: inline-block;
+}
+#nav{
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+#nav>li>a {
+    color: black;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+}
+/* slider */
+#slider {
+    position: relative;
+    width: 1500px;
+    height: 450px;
+    background: url(images/lodging.png) ;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 170px;
+    color: azure;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24;
+}
+
+#slider .text-descrition {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* content */
+
+/* text */
+.content-section {
+    width: 800px;
+    height: 100px;
+    padding: 50px;
+}
+/* img */
+.travelsm{
+    position: absolute;
+}
+.imgtravel{
+    width: 420px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+
+}
+.columnimgbig{
+    position: relative;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-left: 1000px;
+}
+.imgbig{
+    width: 400px;
+}
+.numberlist{
+    height: 200px;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.columnfooter{
+    padding: 50px;
+    max-width: 300px;
+}
+
+/* reponsive */
+@media screen and (max-width:992px) {
+    .about-text  {
+      width: 50%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    .about-text {
+        width: 85%;
+        margin-left: 10%;
+    }
+}
+    
+@media screen and (max-width:768px) {
+    .about-text  {
+      width: 100%;
+    }
+}
